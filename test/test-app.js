@@ -6,6 +6,7 @@ const expected1 = [
 
 describe('App', function(){
 	it('Test Description', function(){
-		assert.equal(app(), expected1);
+		let result = app('test.csv')
+		assert.equal(result, expected1);
 	});		
 });
